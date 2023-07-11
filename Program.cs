@@ -10,7 +10,7 @@ namespace GoToExample
     {
         static void Main(string[] args)
         {
-            string userName;
+            /*string userName;
             Again:
             Console.WriteLine("Enter UserName");
             userName=Console.ReadLine();
@@ -28,6 +28,18 @@ namespace GoToExample
             stringBuilder.Append("To C#");
             stringBuilder.Append("I am string Builder");
             Console.WriteLine(stringBuilder);
+            Console.ReadKey();*/
+
+            for(int i=1;i<10;i++)
+            {
+                if(i == 6)
+                {
+                    goto end;
+                }
+                Console.WriteLine("i value:{0}", i);
+
+            }
+        end: Console.WriteLine("The end");
             Console.ReadKey();
         }
     }
