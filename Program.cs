@@ -24,7 +24,10 @@ namespace GoToExample
                 Console.WriteLine("Invalid UserName");
                 goto Again;
             }
-
+            StringBuilder stringBuilder= new StringBuilder("Welcome");
+            stringBuilder.Append("To C#");
+            stringBuilder.Append("I am string Builder");
+            Console.WriteLine(stringBuilder);
             Console.ReadKey();
         }
     }
